@@ -22,15 +22,15 @@
                     </ion-item>
                     <ion-item>
                         <ion-label position="floating">Page count</ion-label>
-                        <ion-input :value="singleBook.pageCount" type="number" @input="$v.page.$model=$event.target.value"></ion-input>
+                        <ion-input :value="singleBook.pageCount" type="number" @input="$v.singleBook.pageCount.$model=$event.target.value"></ion-input>
                     </ion-item>
                     <ion-item>
                         <ion-label position="floating">Picture link</ion-label>
-                        <ion-input :value="singleBook.thumbnailUrl" type="url" @input="$v.url.$model=$event.target.value"></ion-input>
+                        <ion-input :value="singleBook.thumbnailUrl" type="url" @input="$v.singleBook.thumbnailUrl.$model=$event.target.value"></ion-input>
                     </ion-item>
                     <ion-item>
                         <ion-label position="stacked">Short description</ion-label>
-                        <ion-textarea :value="singleBook.shortDescription" @input="$v.descriptionEdit.$model=$event.target.value"></ion-textarea>
+                        <ion-textarea :value="singleBook.shortDescription" @input="$v.singleBook.shortDescription.$model=$event.target.value"></ion-textarea>
                     </ion-item>
                     <footer>
                         <button class="btn-edit" @click="update" type="button" >Editez
